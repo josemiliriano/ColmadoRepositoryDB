@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using ApiColmadoDB.Entities;
+using Microsoft.EntityFrameworkCore;
 
 namespace ApiColmadoDB
 {
@@ -8,5 +9,7 @@ namespace ApiColmadoDB
         {
 
         }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<Product> Products { get; set; }
     }
 }
